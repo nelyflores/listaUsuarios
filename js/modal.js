@@ -1,19 +1,25 @@
 
 function mostrarDetalles(){
  var contentModal=document.getElementById('contenedor');
+ var imagen= localStorage.getItem("Imagen");
+ var correo= localStorage.getItem("Correo");
+ var direccion=localStorage.getItem("Direccion");
+ var telefono=localStorage.getItem("Telefono");
+ var nombre=localStorage.getItem("Nombre");
+ var username=localStorage.getItem("Username");
 
    
 
      var modal =`<div class="modal">
    <div class="profile__card">
   <div class="header__modal">
-  <img src="img/persona1.jpg" class="modal__img">
+  <img src="${imagen}" class="modal__img">
     <h2 class="datos_api">
-    <span>nombre</span> <br>
-    <span>username</span><br>
-    <span>direccion</span><br>
-    <span>email</span><br>
-    <span>telefono</span>
+    <span>${nombre}</span> <br>
+    <span>${username}</span><br>
+    <span>${direccion}</span><br>
+    <span>${correo}</span><br>
+    <span>${telefono}</span>
     </h2>
   </div>
   </div>
