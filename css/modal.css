@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body{
+	
+	line-height: 1.4;
+	background: #7FAAF1;
+}
+.modal{
+
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: #fff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	transition: box-shadow 0.3;
+	height: 100vh;
+	width: 45vh;
+	text-align: center;
+	
+}
+
+.modal:hover{
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+}
+.tarjeta__informacion{
+	position: absolute;
+	padding: 0 15px;
+	bottom: 54vh;
+    color: white;
+    left: 14vh;
+    font-size: 16px;
+
+}
+.modal__img{
+	height: 100%;
+    width: 100%;
+
+}
+.content__modal{
+	
+    color: #8d8f90;
+}
+.content__modal span{
+	margin: 62px;
+}
